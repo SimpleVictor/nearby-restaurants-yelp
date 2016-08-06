@@ -7,6 +7,12 @@
 </p>
 
 
-- Using Yelp's Api to find restaurant around your area just by opening up the site.
+# Install dependencies
+npm install
+
+# start server
+npm run develop
+
+# Applciation url: http://localhost:3000
 
 
