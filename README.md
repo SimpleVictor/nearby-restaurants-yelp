@@ -8,8 +8,15 @@
 
 ## [Live Demo](https://nearby-restaurants-yelp.herokuapp.com)
 
+
 # Install dependencies
 npm install
+
+# Add Yelp's Api Token
+```
+server/app.ts
+```
+-Input your oauth consumer key, token, consumer secret, and token secret that you get from Yelp.
 
 # start server
 npm run develop
