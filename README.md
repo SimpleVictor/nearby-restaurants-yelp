@@ -6,7 +6,7 @@
   </a>
 </p>
 
-[Live Demo](https://git.heroku.com/nearby-restaurants-yelp.git)
+[Live Demo](nearby-restaurants-yelp.herokuapp.com)
 
 # Install dependencies
 npm install
