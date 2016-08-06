@@ -20,10 +20,46 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
             <div class="list-group">
-                <a *ngFor="let mylist of resultList" href="#" class="list-group-item">{{mylist.name}}</a>
+                <a (click)="openModal(mylist)" *ngFor="let mylist of resultList" href="#" class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3">
+                            <img class="img-responsive" src="{{mylist.image_url}}">
+                        </div>
+                        <div class="col-sm-9 col-md-9">
+                            <h4>{{mylist.name}}</h4>
+                            <p>{{mylist.display_phone}}</p>
+                            <img class="img-responsive" src="{{mylist.rating_img_url}}">
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
 </div>
+
+
+<div *ngIf="!isDataHere" class="ui active inverted dimmer">
+    <div class="ui small loader"></div>
+    <p>Loading restaurants around your area</p>
+</div>
+
+
+
+
+<modal #modal>
+
+    <modal-header>
+        <h4 class="modal-title text-center"><b>{{modalName}}</b></h4>
+    </modal-header>
+    <modal-body>
+        <img class="img-responsive" src="{{modalPicture}}"><br>
+        <b>Address </b>: {{modalAddress}} {{modalCity}}<br>
+        <b>Phone Number </b>: {{modalPhone}}
+    </modal-body>
+    <modal-footer>
+        <img class="img-responsive center-block" src="{{modalStars}}">
+    </modal-footer>
+</modal>
+
 
