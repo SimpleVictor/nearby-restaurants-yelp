@@ -16,7 +16,6 @@ yelp.post("/", function(req, res) {
     console.log(lat);
     console.log(lng);
 
-    // var url = "https://api.yelp.com/v2/search?term=food&ll=37.788022,-122.399797";
     var url = "https://api.yelp.com/v2/search";
 
 
@@ -29,8 +28,8 @@ yelp.post("/", function(req, res) {
     };
 
     var required_parameters = {
-        oauth_consumer_key : "YeP3I5Qt2LLUwlAjPohGxg",
-        oauth_token : "GXeUtlnU6cU16lZqWeYOpY9l8rMD6h60",
+        oauth_consumer_key : "oauth consumer key goes here",
+        oauth_token : "oauth token goes here",
         oauth_nonce : n(),
         oauth_timestamp : n().toString().substr(0,10),
         oauth_signature_method : 'HMAC-SHA1',
@@ -39,8 +38,8 @@ yelp.post("/", function(req, res) {
 
     var parameters = _.assign(default_parameters, required_parameters);
 
-    var consumerSecret = "iNkZGX_xSC6VzjMxXghiGgL1nxM";
-    var tokenSecret = "1Fj055TG7usmcvv-AdkJpdESbWM";
+    var consumerSecret = "consumer secret goes here";
+    var tokenSecret = "token secret goes here";
 
     var signature = oauthSignature.generate(httpMethod, url, parameters, consumerSecret, tokenSecret, { encodeSignature: false});
 
