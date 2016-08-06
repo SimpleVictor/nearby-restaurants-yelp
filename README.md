@@ -6,8 +6,8 @@
   </a>
 </p>
 
-[Live Demo](nearby-restaurants-yelp.herokuapp.com)
-<a src="nearby-restaurants-yelp.herokuapp.com">Live Demo<a>
+## [Live Demo](https://nearby-restaurants-yelp.herokuapp.com)
+
 # Install dependencies
 npm install
 
