@@ -16,7 +16,7 @@ npm install
 
 # Add Yelp's Api Token
 ```
-server/app.ts
+server/routes/yelpapi.ts
 ```
 -Input your oauth consumer key, token, consumer secret, and token secret that you get from Yelp.
 
